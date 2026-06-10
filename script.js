@@ -1,3 +1,7 @@
+function add() {
+  alert("working");
+}
+
 let interviewList = [];
 let rejectedList = [];
 let currentStatus = "all-filter-btn";
