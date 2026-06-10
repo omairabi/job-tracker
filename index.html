@@ -48,5 +48,43 @@
         </div>
       </div>
     </header>
+    <hr class="md:w-[75%] mx-auto mt-7 text-[#E6E7E9] md:ml-48 p-2" />
+    <main class="container mx-auto">
+          <div class="flex justify-between">
+            <h2 class="text-xl font-bold text-[#002C5C] mb-6 p-2 md:p-0">
+              Available Jobs
+            </h2>
+            <div class="flex gap-2 justify-center items-center text-xl">
+              <p id="sidCount">0</p>
+              <p id="sidOf" class="hidden">of</p>
+              <p id="totalJobs" class="hidden">0</p>
+              <p>Jobs</p>
+            </div>
+          </div>
+           <div class="flex gap-5 mb-10 p-2 md:p-0">
+            <button
+              onclick="toggleStyle('all-filter-btn')"
+              id="all-filter-btn"
+              class="bg-[#3B82F6] text-white px-8 shadow rounded-md"
+            >
+              All
+            </button>
+            <button
+              onclick="toggleStyle('interview-filter-btn')"
+              id="interview-filter-btn"
+              class="bg-[#FFFFFF] px-5 py-2 shadow rounded-md"
+            >
+              Interview
+            </button>
+            <button
+              onclick="toggleStyle('rejected-filter-btn')"
+              id="rejected-filter-btn"
+              class="bg-[#FFFFFF] px-5 py-2 shadow rounded-md"
+            >
+              Rejected
+            </button>
+          </div>
+          <section id="filtered-section" class="hidden"></section>
+
   </body>
 </html>
