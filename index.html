@@ -28,5 +28,25 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <header class="container mx-auto mt-16">
+      <h1 class="text-3xl font-bold text-[#002C5C]">Job Application Tracker</h1>
+      <div
+        class="main-container grid grid-cols-1 md:grid-cols-3 gap-5 p-2 md:p-0 mt-5"
+      >
+        <div class="bg-[#FFFFFF] p-5 rounded-lg shadow-xl md:w-[420px]">
+          <p>Total</p>
+          <p id="totalCount" class="text-3xl font-bold text-[#002C5C]">0</p>
+        </div>
+        <div class="bg-[#FFFFFF] p-5 rounded-lg shadow-xl md:w-[420px]">
+          <p>Interview</p>
+          <p id="interviewCount" class="text-3xl font-bold text-[#10B981]">0</p>
+        </div>
+        <div class="bg-[#FFFFFF] p-5 rounded-lg shadow-xl md:w-[420px]">
+          <p>Rejected</p>
+          <p id="rejectedCount" class="text-3xl font-bold text-[#EF4444]">0</p>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
